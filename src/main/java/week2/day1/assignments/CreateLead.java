@@ -11,7 +11,7 @@ public class CreateLead {
         ChromeDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://leaftaps.com/opentaps/control/login");
-        driver.findElement(By.id("username")).sendKeys("DemoCsr");
+        driver.findElement(By.id("username")).sendKeys("demosalesManager");
         driver.findElement(By.id("password")).sendKeys("crmsfa");
         driver.findElement(By.className("decorativeSubmit")).click();
 
