@@ -1,0 +1,102 @@
+inspect element 
+
+if id is found -> first priority to id (if it has comb of numbers , alphanumeric , duplicate (if the value is repeated for other attributes or or tag)  values -> dont use id)
+2) name 
+3) class attribute (className)
+4) link (a) -> linkText, partialLinkText
+
+
+
+ctrl+f --> passed the attirbute value in the search section
+
+
+when no to use
+
+Launch https://login.salesforce.com/
+Enter username as hari.radhakrishnan@qeagle.com
+3.  Enter password as Leaf@1234
+4.  Click on Login.
+
+Demosalesmanager
+crmsfa
+
+
+handson
+
+1. Launch http://leaftaps.com/opentaps
+2. Enter username as demoSalesManager
+3. Enter password as crmsfa
+4. Click on Login
+5. Click on CRM/SFA
+6. Click on Leads
+7.Click on Create lead
+8. Enter the mandatory fields
+9. Select Employee in source dropdown using index
+10.Select Automobile in MarketCampaign using visibleText
+11.Select Corporation in Ownership using value
+12.Click create
+13.Verify the title
+
+
+Attribut based xpath --> //tagname[@atriibute='attributevalue']
+Text based xpath --> //tagname[text()='textvalue']
+Partial attribute based xpath ---> //tagname[contains(@attributename,'attributevalue')]
+Partial text based xpath ---> //tagname[contains(text(),'textvalue')];
+Index based (Collection based) --> (//tagname[@attributename='attributevalue'])[1] ---> for first element --> xpath indexes starts from 1
+
+index based shld not exceed 5
+
+
+1. Launch http://leaftaps.com/opentaps
+2. Enter username as demoSalesManager (Use : Attribute based)
+3. Enter password as crmsfa (Use : Attribute based)
+4. Click on Login (Use : Attribute based)
+5. Click on CRM/SFA (Use Partial Text based xpath)
+6. Click on Leads(Use Text based)
+
+
+
+Exception
+NoSuchElementException --> when the element is not part of the dom or the value is given wrong 
+
+snytax is wrong -> InvalidSelectorException
+
+
+Advanced Xpath (axes bath xpath)
+
+1. Parent to Child --> BaseicRelativeXpathforParent/childtagname
+
+2. child to parent --> in parent tag, no attributes are available... 
+	BasicRelativeXpathForChild/parent::parentTagname
+
+3. grandparent to grandchild
+       BasicRelativeXpathForGrandParent//grandchildtagname 
+
+// -> any descendant node
+
+/ -> direct node
+
+4. grandchild to grandparent	
+	BasicRelativeXpathForGrandChild/ancestor::grandparenttagname
+
+5. Elder cousin to younger cousin based xpath
+	BasicRelativeXpathforElderCousin/following::tagnameofyounercousin
+
+firstname and no of employes -> label based 
+
+6. Youngercousing to eldercousing
+	Basicrelativexpathforyoungercousin/preceding::tagnameofeldercousin
+
+7. ElderSibling To Younger Sibling
+	Basicrelativexpathforeldersibiling/following-sibling::tagnameofyoungersibling
+
+8. YoungerSibling to ElderSibling
+	Basicrelativexpathforyoungersibling/preceding-sibling::tagnameofeldersibling		
+
+
+
+Doubts ----
+1. How to verify if the correct option is chosen in Dropdown --> getattribute showing null
+2. partail text based xpath for createlead button not working. - //input[contains(text(),'Create Lead')]
+    
+

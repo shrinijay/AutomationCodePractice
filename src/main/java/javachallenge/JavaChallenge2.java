@@ -20,16 +20,17 @@ public class JavaChallenge2 {
                 arrMap.put(num[i],1);
         }
 
-        Set<Integer> keysOnly = arrMap.keySet();
+        Set<Map.Entry<Integer,Integer>> keysOnly = arrMap.entrySet();
 
-        for(Integer key : keysOnly)
+        for( Map.Entry<Integer,Integer> each : keysOnly)
+
+
+
         {
-            System.out.println("printing "+arrMap.get(key));
-            if(arrMap.get(key)==1)
-                System.out.println("The unique element is "+arrMap.entrySet());
+            if(each.getValue()==1)
+                System.out.println(each);
         }
 
-        System.out.println("Map is "+arrMap);
 
     }
 
