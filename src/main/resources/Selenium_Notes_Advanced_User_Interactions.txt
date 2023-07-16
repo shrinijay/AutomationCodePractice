@@ -1,0 +1,24 @@
+Actions class
+
+https://swisnl.github.io/jQuery-contextMenu/demo.html
+
+inspect -> ctrl+Shift+i
+
+create object and pass driver
+action	 ---> method in actions class
+
+mouseHover -> moveToElement 
+right click -> contextClick
+doubleClick -> doubleClick
+drop -> dragAndDrop
+scrollToElement -> scrollToElement
+
+webtable
+
+erail.in
+table
+thead
+th -> header information
+tbody
+tr -> rows
+td -> row data

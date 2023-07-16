@@ -15,6 +15,7 @@ public class PVRCinemas {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(50));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.findElement(By.xpath("//div[text()='Movie Library ']")).click();
+        driver.findElement(By.xpath("//select[@name='city']"));
 
         System.out.println("Checking the status -> " +driver.findElement(By.xpath("//label[contains(text(),'City')]")).isDisplayed());
 
