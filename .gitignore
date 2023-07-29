@@ -37,3 +37,13 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### TestNG Report Folder ###
+./testng-reports
+### created src ###
+./.src
+### old ###
+./old
+
+### junit reports ###
+./junitreports
