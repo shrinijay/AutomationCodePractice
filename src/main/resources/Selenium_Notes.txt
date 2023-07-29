@@ -98,5 +98,9 @@ firstname and no of employes -> label based
 Doubts ----
 1. How to verify if the correct option is chosen in Dropdown --> getattribute showing null
 2. partail text based xpath for createlead button not working. - //input[contains(text(),'Create Lead')]
+
+RemoteWebDriver is the parent for the below class
+ChromiumDriver Interface is the parent for Chrome, Edge
+For Firefox,IE, Safari
     
 

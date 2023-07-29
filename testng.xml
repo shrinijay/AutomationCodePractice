@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LeafTaps">
+    <test name="Leads TestCases" parallel="classes" verbose="2">
+        <classes>
+            <class name="week5.day2.reuse.CreateLead"/>
+            <class name="week5.day2.reuse.DuplicateLead"/>
+            <class name="week5.day2.reuse.EditLead"/>
+            <class name="week5.day2.reuse.MergeLead"/>
+        </classes>
+    </test>
+</suite>
